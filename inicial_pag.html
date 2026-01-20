@@ -11,9 +11,10 @@
 
     <!-- ÍCONES DO DESKTOP -->
     <div class="icons">
-        <div class="icon" onclick="abrir('curriculo')">
+       <div class="icon" id="downloadBtn" onclick="baixarCurriculo()">
             📄<span data-i18n="curriculo"></span>
         </div>
+
         <div class="icon" onclick="abrir('sobre')">
             👤<span data-i18n="sobre"></span>
         </div>
@@ -70,7 +71,10 @@
                 <h4 data-i18n="pinned"></h4>
                 <div class="apps">
                     <div class="app">📁 <span data-i18n="explorer"></span></div>
-                    <div class="app">📄 <span data-i18n="curriculo"></span></div>
+                    <div class="app" onclick="baixarCurriculo()">
+                        📄 <span data-i18n="curriculo"></span>
+                    </div>
+
                     <div class="app">💼 <span data-i18n="projetos"></span></div>
                     <div class="app">⚙️ <span data-i18n="config"></span></div>
                 </div>
