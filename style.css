@@ -1,0 +1,151 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("https://wallpaperaccess.com/full/317501.jpg") no-repeat center / cover;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+/* =====================
+   LOCKSCREEN
+===================== */
+.lockscreen {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lock-content {
+    text-align: center;
+}
+
+.clock {
+    font-size: 88px;
+    font-weight: 600;
+}
+
+.date {
+    font-size: 18px;
+    opacity: 0.85;
+}
+
+/* =====================
+   LOGIN
+===================== */
+.login {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(18px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARD PEQUENO (WINDOWS REAL) */
+.login-card {
+    position: relative;
+    width: 360px;
+    padding: 40px;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(22px);
+
+    border-radius: 16px;
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+/* AVATAR */
+.avatar {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+
+    background: url("galeria/logo.png") no-repeat center / cover;
+
+    box-shadow:
+        0 0 0 3px rgba(255,255,255,0.25),
+        0 8px 24px rgba(0,0,0,0.6);
+}
+
+/* TEXTOS */
+.login-card h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.login-card h6 {
+    font-size: 11px;
+    opacity: 0.8;
+    margin-bottom: 18px;
+}
+
+/* BOTÕES */
+button {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    background: #0078d4;
+    color: #ffffff;
+}
+
+button.secondary {
+    background: rgba(255,255,255,0.16);
+}
+
+/* IDIOMA – DISCRETO (WINDOWS) */
+.language-selector {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    display: flex;
+    gap: 6px;
+}
+
+.lang-btn {
+    padding: 2px 8px;
+    font-size: 11px;
+    border-radius: 4px;
+    background: transparent;
+    color: rgba(255,255,255,0.8);
+    border: none;
+    cursor: pointer;
+}
+
+.lang-btn.active {
+    background: rgba(255,255,255,0.25);
+    color: #ffffff;
+}
+
+/* UTIL */
+.hidden {
+    display: none;
+}
+

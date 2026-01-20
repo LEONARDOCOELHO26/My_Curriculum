@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindo | Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOCKSCREEN -->
+<div id="lockscreen" class="lockscreen">
+    <div class="lock-content">
+        <div class="clock" id="clock"></div>
+        <div class="date" id="date"></div>
+    </div>
+</div>
+
+<!-- LOGIN -->
+<div id="login" class="login hidden">
+    <div class="login-wrapper">
+        <div class="login-card">
+
+            <div class="avatar"></div>
+
+            <h2 id="title">Bem-vindo ao meu currículo</h2>
+            <h6 id="hint">
+                para uma melhor imersão coloque em tela cheia (F11 ou Fn + F11)
+            </h6>
+
+            <div class="actions">
+                <button onclick="entrar()" id="enterBtn">Entrar</button>
+
+                    <button class="secondary" id="downloadBtn" onclick="baixarCurriculo()">
+                        Baixar Currículo
+                    </button>
+
+            </div>
+
+            
+
+        </div>
+    </div>
+</div>
+<!-- SELETOR DE IDIOMA -->
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="pt" onclick="setLanguage('pt')">PT</button>
+                <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+            </div>
+
+<script src="script.js"></script>
+</body>
+</html>
